@@ -26,6 +26,6 @@ The Resume Builder is a web application that allows users to create and customiz
    ```sh
    cd Resume-Builder-Static-JS-Project
 3. Open `index.html` in your web browser to use the application.
-   -Command for run index file:
+   - Command for run index file:
    ```sh
    index.html
