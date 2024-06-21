@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jqury-compressd.js"></script>
+    <script src="js/require.js"></script>
+</head>
+
+<body>
+    <div id="load_id" class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <div class="container">
+        <div class="iscu_form_wrapper">
+            <form action="" id="resume_form" class="iscu_resume_form" method="POST" enctype="multipart/form-data">
+                <div class="iscu_resume_title_wrapper">
+                    <h1>Information Form</h1>
+                </div>
+                <div class="iscu_resume_input_fields_wrapper">
+                    <div class="iscu_resume_field">
+                        <div class="iscu_field_label">
+                            <label for="firstname">First Name:</label>
+                        </div>
+                        <div class="iscu_input_field">
+                            <input type="text" id="firstname" name="firstname">
+                        </div>
+                        <div class="error">
+                            <h5 id="firstname_err"></h5>
+                        </div>
+                    </div>
+                    <div class="iscu_resume_field">
+                        <div class="iscu_field_label">
+                            <label for="lastname">Last Name:</label>
+                        </div>
+                        <div class="iscu_input_field">
+                            <input type="text" id="lastname" name="lastname">
+                        </div>
+                        <div class="error">
+                            <h5 id="lastname_err"></h5>
+                        </div>
+                    </div>
+                    <div class="iscu_resume_field">
+                        <div class="iscu_field_label">
+                            <label for="image">Photo:</label>
+                        </div>
+                        <div class="iscu_input_field">
+                            <input type="file" id="image" accept="image/*" name="image">
+                        </div>
+                        <div class="error">
+                            <h5 id="image_err"></h5>
+                        </div>
+                    </div>
+                    <div class="iscu_resume_field">
+                        <div class="iscu_field_label">
+                            <label for="gender">Gender:</label>
+                        </div>
+                        <div class="iscu_input_gender_field">
+                            <div class="male_wrapper">
+                                <input type="radio" id="gender" name="gender" value="Male">Male
+                            </div>
+                            <div class="female_wrapper">
+                                <input type="radio" id="gender" name="gender" value="female">Female
+                            </div>
+                        </div>
+                        <div class="error">
+                            <h5 id="gender_err"></h5>
+                        </div>
+                    </div>
+                    <div class="iscu_resume_field">
+                        <div class="iscu_field_label">
+                            <label for="mobile">Mobile Number:</label>
+                        </div>
+                        <div class="iscu_input_field">
+                            <input type="text" id="mobile" name="mobile">
+                        </div>
+                        <div class="error">
+                            <h5 id="mobile_err"></h5>
+                        </div>
+                    </div>
+                    <div class="iscu_resume_field">
+                        <div class="iscu_field_label">
+                            <label for="email">Email ID:</label>
+                        </div>
+                        <div class="iscu_input_field">
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="error">
+                            <h5 id="email_err"></h5>
+                        </div>
+                    </div>
+                    <div class="iscu_resume_field">
+                        <div class="iscu_field_label">
+                            <label for="address">Address:</label>
+                        </div>
+                        <div class="iscu_input_field">
+                            <input type="text" id="address" name="address">
+                        </div>
+                        <div class="error">
+                            <h5 id="address_err"></h5>
+                        </div>
+                    </div>
+                    <div class="iscu_resume_field">
+                        <div class="iscu_field_label">
+                            <label for="experience">Experience:</label>
+                        </div>
+                        <div class="iscu_input_field">
+                            <textarea name="experience" id="experience" rows="3"></textarea>
+                        </div>
+                        <div class="error">
+                            <h5 id="experience_err"></h5>
+                        </div>
+                    </div>
+                    <div class="iscu_resume_field">
+                        <div class="iscu_field_label">
+                            <label>Skills:</label>
+                        </div>
+                        <div class="iscu_input_skills_field">
+                            <div class="select_field">
+                                <input type="checkbox" name="skills" value="bookkeeping">Bookkeeping
+                            </div>
+                            <div class="select_field">
+                                <input type="checkbox" name="skills" value="tax filling">Tax Filling
+                            </div>
+                            <div class="select_field">
+                                <input type="checkbox" name="skills" value="data entry">Data Entry
+                            </div>
+                            <div class="select_field">
+                                <input type="checkbox" name="skills" value="data analysis">Data Analysis
+                            </div>
+                            <div class="select_field">
+                                <input type="checkbox" name="skills" value="cost reduction management">Cost Reduction Management
+                            </div>
+                            <div class="select_field">
+                                <input type="checkbox" name="skills" value="public accounting">Public Accounting
+                            </div>
+                            <div class="select_field">
+                                <input type="checkbox" name="skills" value="business budgeting">Business Budgeting
+                            </div>
+                            <div class="select_field">
+                                <input type="checkbox" name="skills" value="business assessment">Business Assessment
+                            </div>
+                        </div>
+                        <div class="error">
+                            <h5 id="skills_err"></h5>
+                        </div>
+                    </div>
+                    <div class="iscu_resume_field">
+                        <div class="iscu_field_label">
+                            <label for="language">Language:</label>
+                        </div>
+                        <div class="iscu_input_field">
+                            <select name="language" id="language">
+                                <option value="" hidden>Select Language</option>
+                                <option value="english">English</option>
+                                <option value="gujarati">Gujarati</option>
+                                <option value="hindi">Hindi</option>
+                            </select>
+                        </div>
+                        <div class="error">
+                            <h5 id="language_err"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="iscu_form_submit_button">
+                    <button type="submit" name="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="down_part">
+            <div class="back_button">
+                <button onclick="location.reload();">Back</button>
+            </div>
+            <div class="iscu_resume_wrapper">
+                <div class="iscu_resume_left_content_wrapper">
+                    <div class="iscu_resume_profile_image_wrapper">
+                        <div class="image_wrapper">
+                            <img id="image_val" src="#" alt="profile.jpg">
+                        </div>
+                    </div>
+                    <div class="iscu_profile_name_wrapper">
+                        <div class="profile_firstname">
+                            <h1 id="firstname_val">test</h1>
+                        </div>
+                        <div class="profile_lastname">
+                            <h1 id="lastname_val">user</h1>
+                        </div>
+                    </div>
+                    <div class="iscu_profile_designation_wrapper">
+                        <p>certified public accountant</p>
+                    </div>
+                    <div class="iscu_profile_gender_wrapper">
+                        <p>Gender: </p>
+                        <p id="gender_val">Male</p>
+                    </div>
+                    <div class="iscu_profile_personal_info_wrapper">
+                        <div class="profile_personal_heading">
+                            <h1>Personal Information</h1>
+                        </div>
+                        <hr>
+                        <div class="profile_personal_mobile">
+                            <p id="mobile_val">9876543210</p>
+                        </div>
+                        <div class="profile_personal_email">
+                            <p id="email_val">test@gmail.com</p>
+                        </div>
+                        <div class="profile_personal_portfolio">
+                            <p>www.reallygreatsite.com</p>
+                        </div>
+                        <div class="profile_personal_address">
+                            <p id="address_val">Address</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="iscu_resume_right_content_wrapper">
+                    <div class="iscu_profile_professional_experience_wrapper">
+                        <div class="profile_professional_experience_heading">
+                            <h1>Professional Experience</h1>
+                        </div>
+                        <hr>
+                        <div class="profile_professional_experience">
+                            <p id="experience_val">test</p>
+                        </div>
+                    </div>
+                    <div class="iscu_other_content_wrapper">
+                        <div class="iscu_profile_skills_wrapper">
+                            <div class="profile_skills_heading">
+                                <h1>Skills</h1>
+                            </div>
+                            <hr>
+                            <div class="profile_skills">
+                                <ul id="skills_val">
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="iscu_profile_language_wrapper">
+                            <div class="profile_language_heading">
+                                <h1>language</h1>
+                            </div>
+                            <hr>
+                            <div class="profile_language">
+                                <ul id="language_val">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
