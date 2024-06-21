@@ -21,8 +21,8 @@ The Resume Builder is a web application that allows users to create and customiz
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/resume-builder.git
+   git clone https://github.com/nirmal-karathiya/Resume-Builder-Static-JS-Project.git
 2. Navigate to the project directory:
    ```sh
-   cd resume-builder
+   cd Resume-Builder-Static-JS-Project
 3. Open `index.html` in your web browser to use the application.
