@@ -29,6 +29,6 @@ The Resume Builder is a web application that allows users to create and customiz
 
    or
    
-   Command for run index file:
+   type this command for run index file:
    ```sh
    index.html
